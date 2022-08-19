@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Basic -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+   <meta name="keywords" content="" />
+   <meta name="description" content="" />
+   <meta name="author" content="" />
+
+
+
+	<title>education</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/all.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/all.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/lightbox.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename= 'css/bootstrap.min (1).css') }}">
+	<link rel="stylesheet" href="{{ url_for('static' , filename= 'css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/responsive.css') }}">
+    <link href="{{ url_for('static',filename = 'css/font-awesome.min.css')  }}" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/flexslider.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/owl.carousel.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/owl.theme.default.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/jquery.rateyo.css') }}">
+	<!-- <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/inner-page-style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/style.css') }}">
+	<link rel="stylesheet"  href="{{ url_for('static' , filename= 'css/style (1).css') }}">
+	<link rel="stylesheet"  href="{{ url_for('static' , filename= 'css/style (2).css') }}">
+	<link rel="stylesheet"  href="{{ url_for('static' , filename= 'css/style.css.css') }}">
+     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename= 'css/style2.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+</head>
+
+
+<body>
+	<div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
+		<header class="site-header">
+			<div class="top-header">
+				<div class="container">
+					<div class="top-header-left">
+						<div class="top-header-block">
+							<a href="mailto:2020pietcskhushi92@poornima.org" itemprop="email"><i class="fas fa-envelope"></i> 2020pietcskhushi92@poornima.org</a>
+						</div>
+						<div class="top-header-block">
+							<a href="tel:+919950669422" itemprop="telephone"><i class="fas fa-phone"></i> +91 9950669422</a>
+						</div>
+					</div>
+					<div class="top-header-right">
+						<div class="social-block">
+							<ul class="social-list">
+								<li><a href=""><i class="fab fa-viber"></i></a></li>
+								<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+								<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+								<li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+								<li><a href=""><i class="fab fa-skype"></i></a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- Top header Close -->
+			<div class="main-header">
+				<div class="container">
+					<div class="logo-wrap" itemprop="logo">
+						<img src="{{ url_for('static' , filename= 'images/logoo.jpg.jpg') }}" alt="Logo Image">
+						<!-- <h1>Education</h1> -->
+					</div>
+					<div class="nav-wrap">
+						<nav class="nav-desktop">
+							<ul class="menu-list">
+								<li><a href="/">Home</a></li>
+								
+						
+								<li><a href="/aboutus">About</a></li>
+								<li><a href="/contact">Contact</a></li>
+								<li><a href="/intern">Other projects</a></li>
+							</ul>
+						</nav>
+						<div id="bar">
+							<i class="fas fa-bars"></i>
+						</div>
+						<div id="close">
+							<i class="fas fa-times"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Header Close -->
+
+        <br><br><br><br>
+
+
+
+
+
+        <div class="main-block">
+            <div class="left-part">
+              <h1>K Nearest Neighbor</h1>
+              <p>K-NN algorithm assumes the similarity between the new case/data and available cases and put the new case into the category that is most similar to the available categories. 
+                 K-NN algorithm stores all the available data and classifies a new data point based on the similarity. 
+                 This means when new data appears then it can be easily classified into a well suite category by using K- NN algorithm. 
+                 K-NN algorithm can be used for Regression as well as for Classification but mostly it is used for the Classification problems.
+                 K-NN is a non-parametric and lazy learner algorithm</p>
+            </div>
+            <form action="{{ url_for('predict2')}}" method="get">
+              <div class="title">
+                <h2>Enter data here</h2>
+              </div>
+              <div class="info">
+  
+                <input class="age" type="number" name="age" min="18" max="100" placeholder="Age">
+                
+                <select name="aa">
+                  <option>Select AccidentArea</option>
+                  <option value="0">Rural</option>
+                  <option value="1">Urban</option>
+                 
+                </select>
+  
+                <select name="wc">
+                  <option>Select DayOfWeekClaimed</option>
+                  <option value="2">Monday</option>
+                  <option value="6">Tuesday</option>
+                  <option value="7">Wednesday</option>
+                  <option value="5">Thursday</option>
+                  <option value="1">Friday</option>
+                  <option value="3">Saturday</option>
+                  <option value="4">Sunday</option>
+                  
+                </select>
+  
+                <select name="mc">
+                  <option>Select MonthClaimed</option>
+                  <option value="5">January</option>
+                  <option value="4">February</option>
+                  <option value="8">March</option>
+                  <option value="1">April</option>
+                  <option value="9">May</option>
+                  <option value="7">June</option>
+                  <option value="6">July</option>
+                  <option value="2">August</option>
+                  <option value="12">September</option>
+                  <option value="11">October</option>
+                  <option value="10">November</option>
+                  <option value="3">December</option>
+                </select>
+  
+                <select name="pt">
+                  <option>Select PolicyType</option>
+                  <option value="0">Sedan-All Perlis</option>
+                  <option value="1">Sedan-Collision</option>
+                  <option value="2">Sedan-liability</option>
+                  <option value="3">Sport-All Perlis</option>
+                  <option value="4">Sport-Collision</option>
+                  <option value="5">Sport-liability</option>
+                  <option value="6">Utility-All Perlis</option>
+                  <option value="7">Utility-Collision</option>
+                  <option value="8">Utility-liability</option>
+                  
+                </select>
+  
+                <select name="vc">
+                  <option>Select VehicleCategory</option>
+                  <option value="0">Sedan</option>
+                  <option value="1">Sport</option>
+                  <option value="2">Utility</option>
+                  
+                </select>
+
+                <select name="vp">
+                    <option>Select VehiclePrice</option>
+                    <option value="0">20000 to 29000  </option>
+                    <option value="1">30000 to 39000  </option>
+                    <option value="2">40000 to 59000  </option>
+                    <option value="3">60000 to 69000  </option>
+                    <option value="4">less than 20000 </option>
+                    <option value="5">more than 69000 </option>
+              
+                  </select>
+  
+  
+                <select name="av">
+                  <option>Select AgeOfVehicle</option>
+                  <option value="0">2 years</option>
+                  <option value="1">3 years</option>
+                  <option value="2">4 years</option>
+                  <option value="3">5 years</option>
+                  <option value="4">6 years</option>
+                  <option value="5">7 years</option>
+                  <option value="6">More than years</option>
+                  <option value="7">new</option>
+                </select>
+
+                <select name="repf">
+                    <option>Select PoliceReportFiled</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+
+                <select name="wp">
+                    <option>Select WitnessPresent</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+
+
+                <select name="sex">
+                  <option>Select Sex</option>
+                  <option value="1">Male</option>
+                  <option value="0">Female</option>
+                </select>
+  
+  
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+            </form>
+          </div>
+  
+  
+         <br><br><br><br><br> 
+
+
+
+
+
+
+
+    <div class="col-md-12">
+        <center><h3 class="section-title" style="text-align: center;">Sponsored by</h3></center>
+      </div>
+    
+    <br>
+    <br>
+
+<div class="container">
+  <div class="row">
+      <div class="col-xs-12 col-md-4">
+          <div class="card mb-3">
+      
+              <div class="card">
+                  <img style="max-height: 200px;" src="{{ url_for('static',filename = 'images/AICTEIdeaLabFooterLogo.png')  }}"
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title" style="text-align:center">IDEA LAB</h5>
+                      
+                  </div>
+      
+      
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-xs-12 col-md-4">
+          <div class="card mb-3">
+      
+              <div class="card">
+                  <img style="max-height: 200px;" src="{{ url_for('static',filename = 'images/nbanew.png')  }}"
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title" style="text-align:center">NBA</h5>
+                      
+                  </div>
+      
+      
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-xs-10 col-md-4">
+          <div class="card mb-3">
+
+              <div class="card">
+                  <img style="max-height: 200px;"
+                      src="{{ url_for('static',filename = 'images/aicte-logo.png')  }}"
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title"; style="text-align:center">AICTE MODROB DEEP LEARNING LAB</h5>
+                      
+                  </div>
+
+              </div>
+
+          </div>
+      </div>
+   </div>
+</div>
+         
+
+<br><br><br><br><br>
+<div class="fixed-bottom ">
+  <div class="bg-secondary " style="min-height: 40px;">
+
+      <marquee style="color:#fff; margin-top: 7px;">
+          <h9>Developed by Khushi Bisht, Student, Department of Computer Engineering, PIET</h9>
+      </marquee>
+  </div>
+</div>
+<!-- change later-->
+<script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+
+
+
+
+
+
+</div>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/js/lightbox.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/all.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/isotope.pkgd.min.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/owl.carousel.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.flexslider.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.rateyo.js')  }}"></script>
+<!-- <script type="text/javascript" src="js/jquery.mmenu.all.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script> -->
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/custom.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/custom1.js')  }}"></script>
+<script src=src="{{ url_for('static',filename = 'js/jquery-3.4.1.min.js')  }}"></script>
+<!-- bootstrap js -->
+<script src="{{ url_for('static',filename = 'js/bootstrap.js')  }}"></script>
+
+</body>
+</html>
