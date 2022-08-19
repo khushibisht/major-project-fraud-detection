@@ -85,6 +85,7 @@
 								<li><a href="/aboutus">About</a></li>
 								<li><a href="/contact">Contact</a></li>
 								<li><a href="/intern">Other projects</a></li>
+								<li><a href="/qr">QR-code</a></li>
 							</ul>
 						</nav>
 						<div id="bar">
@@ -100,7 +101,7 @@
 
 
 <br><br><br>
- <h3><font color="blue"><center>{{prediction_text}}</center></font></h3>
+ <h1><font color="blue"><center>{{prediction_text}}</center></font></h1>
 
 
 
@@ -111,6 +112,7 @@
     <br> <br>
     <br>
 
+	<br><br><br>	
     <div class="col-md-12">
         <center><h3 class="section-title" style="text-align: center;">Sponsored by</h3></center>
       </div>
@@ -124,7 +126,7 @@
           <div class="card mb-3">
       
               <div class="card">
-                  <img style="max-height: 200px;" src="images/Aicte.png"
+                  <img style="max-height: 200px;" src="{{ url_for('static',filename = 'images/AICTEIdeaLabFooterLogo.png')  }}"
                       class="card-img-top" alt="...">
                   <div class="card-body">
                       <h5 class="card-title" style="text-align:center">IDEA LAB</h5>
@@ -140,7 +142,7 @@
           <div class="card mb-3">
       
               <div class="card">
-                  <img style="max-height: 200px;" src="images/nbanew.png"
+                  <img style="max-height: 200px;" src="{{ url_for('static',filename = 'images/nbanew.png')  }}"
                       class="card-img-top" alt="...">
                   <div class="card-body">
                       <h5 class="card-title" style="text-align:center">NBA</h5>
@@ -152,11 +154,12 @@
           </div>
       </div>
       
-      <div class="col-xs-10 col-md-3">
+      <div class="col-xs-10 col-md-4">
           <div class="card mb-3">
 
               <div class="card">
-                  <img style="max-height: 200px;"src='images/aicte-logo.png'
+                  <img style="max-height: 200px;"
+                      src="{{ url_for('static',filename = 'images/aicte-logo.png')  }}"
                       class="card-img-top" alt="...">
                   <div class="card-body">
                       <h5 class="card-title"; style="text-align:center">AICTE MODROB DEEP LEARNING LAB</h5>
@@ -167,77 +170,43 @@
 
           </div>
       </div>
+   </div>
+</div>
+         
+
+<br><br><br><br><br>
+<div class="fixed-bottom ">
+  <div class="bg-secondary " style="min-height: 40px;">
+
+      <marquee style="color:#fff; margin-top: 7px;">
+          <h9>Developed by Khushi Bisht, Student, Department of Computer Engineering, PIET</h9>
+      </marquee>
+  </div>
+</div>
+<!-- change later-->
+<script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
 
 
 
-      <div class="bottom_bg">
-
-        <!-- info section -->
-        <section class="info_section ">
-          <div class="container">
-            <div class="info_box ">
-              <div class="info_contact">
-                <a href="https://www.google.com/maps/place/Poornima+Institute+of+Engineering+and+Technology/@26.7677794,75.8481925,17z/data=!3m1!4b1!4m5!3m4!1s0x396dc91e898380fd:0xeee859ae1f1b64b0!8m2!3d26.7677794!4d75.8503812">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span>
-                    Location
-                  </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span>
-                    +01 1234567890
-                  </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-envelope"></i>
-                  <span>
-                    poornima@gmail.com
-                  </span>
-                </a>
-              </div>
-              <div class="social_box">
-                <a href="https://www.facebook.com/PoornimaInstitute/">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="https://twitter.com/PIET_Jaipur?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQGcToVIt0ueFAAAAYKiQf2QwMOorWDmqvhC9rxQJZXUREcn-QeOntYmp8zBpiqrQVhv1Q8Q7BUkbc-uZxUw4fmJOXyuy-OkP6tED_dP7wzPpb1RK3bMsHtu0qES3ocqkKioJPM=&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fin.linkedin.com%2Fschool%2Fpoornima-college-of-engineering-jaipur%2F">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end info_section -->
-    </div>
 
 
-    <br><br><br><br><br><br><br><br>
-    <div class="fixed-bottom ">
-        <div class="bg-white " style="min-height: 40px;">
 
-            <marquee style="color:purple; margin-top: 7px;">
-                <h9>Developed by Department of Computer Engineering, PIET</h9>
-            </marquee>
-        </div>
-    </div>
-    
-
-
-    </div>
-
-    
-<!-- jQery -->
-<script src="js/jquery-3.4.1.min.js"></script>
+</div>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/js/lightbox.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/all.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/isotope.pkgd.min.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/owl.carousel.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.flexslider.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.rateyo.js')  }}"></script>
+<!-- <script type="text/javascript" src="js/jquery.mmenu.all.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script> -->
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/custom.js')  }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename = 'js/custom1.js')  }}"></script>
+<script src=src="{{ url_for('static',filename = 'js/jquery-3.4.1.min.js')  }}"></script>
 <!-- bootstrap js -->
-<script src="js/bootstrap.js"></script>
-<!-- custom js -->
-<script src="js/custom.js"></script>
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-<!-- End Google Map -->
- 
+<script src="{{ url_for('static',filename = 'js/bootstrap.js')  }}"></script>
+
+
 </body>
 </html>
